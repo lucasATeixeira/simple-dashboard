@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+}
+
+body {
+  display: flex;  
+}
+
+div.side {
+  height: 100%;
+  width: 100px;
+  
+  background: blue;
+
+  transition: 500ms ease;
+}
+
+div.side:hover {
+  width: 300px;
+}
+
+div.top-content-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+div.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+
+  background: red;
+}
+
+div.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  background: black;
+}
+
+div.content {
+  flex: 1;  
+
+  background: green;
+
+  overflow: auto;
+}
+
+div.wrapper {
+  max-width: 1400px;  
+  margin: 50px auto;
+  padding: 0 30px;  
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+div.card {
+  height: 200px;
+  border-radius: 10px;
+
+  background: white;
+}
+
